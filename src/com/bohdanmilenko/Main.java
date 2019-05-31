@@ -67,14 +67,11 @@ public class Main {
         System.out.println(stockList);
 
         unreserveQntty(jamesCart,"cup",8);
-        //temp = new StockItem("pen", 1.12);
-        //stockList.Items().put(temp.getName(), temp);
-//        stockList.Items().get("car").adjustStock(2000);
-//        stockList.get("car").adjustStock(-1000);
         System.out.println(stockList);
         unreserveQntty(jamesCart,"cup",8);
         unreserveQntty(jamesCart,"door",8);
-        for(Map.Entry<String, Double> price: stockList.PriceList().entrySet()) {
+       
+	for(Map.Entry<String, Double> price: stockList.PriceList().entrySet()) {
             System.out.println(price.getKey() + " costs " + price.getValue());
         }
         System.out.println("========================");
